@@ -1,0 +1,26 @@
+[package]
+name = "tests-target-cfg"
+publish = false
+version = "0.0.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+logos = { path = "../..", default-features = false, features = ["export_derive"] }
+
+[features]
+forbid_unsafe = [
+    "logos/forbid_unsafe"
+]
+debug = [
+    "logos/debug"
+]
+state_machine_codegen = [
+    "logos/state_machine_codegen"
+]
+
+[dev-dependencies]
+
+[package.metadata.release]
+release = false

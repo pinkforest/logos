@@ -1,6 +1,6 @@
 [workspace]
 members = ["logos-cli", "logos-codegen", "logos-derive", "tests"]
-exclude = ["fuzz"]
+exclude = ["fuzz", "tests/target-cfg"]
 resolver = "2"
 
 [workspace.package]
